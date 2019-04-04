@@ -6,22 +6,24 @@
     
 
     
-    <title>Test | ZeromaXHe的博客</title>
+    <title>【力扣算法】2.两数相加 | ZeromaXHe的博客</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
-<meta name="keywords" content="zeromaxhe blog github">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Test">
-<meta property="og:url" content="http://yoursite.com/Test/index.html">
+        <meta name="keywords" content="java,leetcode,linklist">
+    
+    <meta name="description" content="题目给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例：123输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)输出：7 -&amp;gt; 0 -&amp;g">
+<meta name="keywords" content="java,leetcode,linklist">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【力扣算法】2.两数相加">
+<meta property="og:url" content="http://yoursite.com/2019/04/04/【力扣算法】2-两数相加/index.html">
 <meta property="og:site_name" content="ZeromaXHe的博客">
-<meta property="og:description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
+<meta property="og:description" content="题目给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例：123输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)输出：7 -&amp;gt; 0 -&amp;g">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-04T07:17:29.752Z">
+<meta property="og:updated_time" content="2019-04-04T08:47:22.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Test">
-<meta name="twitter:description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
+<meta name="twitter:title" content="【力扣算法】2.两数相加">
+<meta name="twitter:description" content="题目给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例：123输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)输出：7 -&amp;gt; 0 -&amp;g">
     
 
     
@@ -134,29 +136,78 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/Test/index.html">Test</em>
+    <a class="page-title-link" href="/categories/java/">java</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-【力扣算法】2-两数相加" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Test
+        【力扣算法】2.两数相加
         </h1>
     
 
             </header>
         
         
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/04/04/【力扣算法】2-两数相加/" class="article-date">
+            <time datetime="2019-04-04T08:29:00.000Z" itemprop="datePublished">2019-04-04</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/leetcode/">leetcode</a>, <a class="tag-link" href="/tags/linklist/">linklist</a>
+    </div>
+
+            </div>
+        
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Try to test what the so-called Pages mean.</p>
-<p>(Still don’t know where they are…)</p>
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>给出两个 <strong>非空</strong> 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 <strong>逆序</strong> 的方式存储的，并且它们的每个节点只能存储 <strong>一位</strong> 数字。</p>
+<p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p>
+<p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p>
+<p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span><br><span class="line">输出：7 -&gt; 0 -&gt; 8</span><br><span class="line">原因：342 + 465 = 807</span><br></pre></td></tr></table></figure></p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>具体不想复制了，这道题不难，就是特殊情况可以看看：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">测试用例</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">l1=[0,1] l2=[0,1,2]</td>
+<td style="text-align:center">当一个列表比另一个列表长时。</td>
+</tr>
+<tr>
+<td style="text-align:center">l1=[] l2=[0,1]</td>
+<td style="text-align:center">当一个列表为空时，即出现空列表。</td>
+</tr>
+<tr>
+<td style="text-align:center">l1=[9,9] l2=[1]</td>
+<td style="text-align:center">求和运算最后可能出现额外的进位，这一点很容易被遗忘</td>
+</tr>
+</tbody>
+</table>
+<p>具体解答我在感想里面写，顺便写些注释。</p>
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><p>具体解决答案：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单链表的定义：</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;//构造函数</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">    ListNode dummyHead = <span class="keyword">new</span> ListNode(<span class="number">0</span>);<span class="comment">//之所以叫dummyHead就是因为链表的头是val为0的哑节点</span></span><br><span class="line">    ListNode p = l1, q = l2, curr = dummyHead;<span class="comment">//p是指示l1上第几位的指针，q是l2的，curr是最后返回的链表的</span></span><br><span class="line">    <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//while内部之所以是||，就是为了走完全程，怕上面特例的第三种</span></span><br><span class="line">    <span class="keyword">while</span> (p != <span class="keyword">null</span> || q != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> x = (p != <span class="keyword">null</span>) ? p.val : <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> y = (q != <span class="keyword">null</span>) ? q.val : <span class="number">0</span>;<span class="comment">//加判断就是避免前面或的情况导致进入循环内部的空节点</span></span><br><span class="line">        <span class="keyword">int</span> sum = carry + x + y;</span><br><span class="line">        carry = sum / <span class="number">10</span>;</span><br><span class="line">        curr.next = <span class="keyword">new</span> ListNode(sum % <span class="number">10</span>);</span><br><span class="line">        curr = curr.next;</span><br><span class="line">        <span class="keyword">if</span> (p != <span class="keyword">null</span>) p = p.next;</span><br><span class="line">        <span class="keyword">if</span> (q != <span class="keyword">null</span>) q = q.next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (carry &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        curr.next = <span class="keyword">new</span> ListNode(carry);<span class="comment">//处理最后多出来的进位</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dummyHead.next;<span class="comment">//注意返回的是next</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>请注意，我们使用哑结点来简化代码。如果没有哑结点，则必须编写额外的条件语句来初始化表头的值。</p>
+<p>借这道题熟悉一下java的链表用法，但有趣的是题解内的拓展：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如果链表中的数字不是按逆序存储的呢？例如：</span><br><span class="line"></span><br><span class="line">(3 → 4 → 2 ) + ( 4 → 6 → 5) = 8 → 0 → 7</span><br></pre></td></tr></table></figure>
+<p>如果按我的想法那就是重新头插法建两个新的链表然后按原题做，但不知道有没有更好的办法</p>
 
         </div>
         <footer class="article-footer">
@@ -164,7 +215,7 @@
 
 
 
-    <a data-url="http://yoursite.com/Test/index.html" data-id="cju2bowvv0000iorcm20tz70f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2019/04/04/【力扣算法】2-两数相加/" data-id="cju2dq2qf000eiorcakywpz3h" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -234,18 +285,19 @@
             "@type": "Person",
             "name": "ZeromaXHe"
         },
-        "headline": "Test",
+        "headline": "【力扣算法】2.两数相加",
         "image": "http://yoursite.com",
-        
-        
+        "keywords": "java leetcode linklist",
+        "genre": "java",
         "datePublished": "2019-04-04",
         "dateCreated": "2019-04-04",
         "dateModified": "2019-04-04",
-        "url": "http://yoursite.com/Test/index.html",
-        "description": "Try to test what the so-called Pages mean.
-(Still don’t know where they are…)
-"
-        "wordCount": 13
+        "url": "http://yoursite.com/2019/04/04/【力扣算法】2-两数相加/",
+        "description": "题目给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
+您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
+示例：123输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)输出：7 -&gt; 0 -&g"
+        "wordCount": 424
     }
 </script>
 
@@ -321,6 +373,29 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/04/04/【转】Markdown内LaTeX的用法/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            【转】Markdown内LaTeX的用法
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2019/04/04/【力扣算法】1-两数之和/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">【力扣算法】1.两数之和</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -529,7 +604,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://yoursite.com/Test/index.html';
+    var disqus_url = 'http://yoursite.com/2019/04/04/【力扣算法】2-两数相加/';
     
     (function() {
     var dsq = document.createElement('script');

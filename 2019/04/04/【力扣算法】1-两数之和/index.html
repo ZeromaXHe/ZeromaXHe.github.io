@@ -6,22 +6,24 @@
     
 
     
-    <title>Test | ZeromaXHe的博客</title>
+    <title>【力扣算法】1.两数之和 | ZeromaXHe的博客</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
-<meta name="keywords" content="zeromaxhe blog github">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Test">
-<meta property="og:url" content="http://yoursite.com/Test/index.html">
+        <meta name="keywords" content="java,leetcode,hashmap">
+    
+    <meta name="description" content="题目给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例:1234给定 nums = \[2, 7, 11, 15], target = 9因为 nums\[0] + nums\[1] = 2 + 7 = 9所以返回 \[0, 1] 题解1.">
+<meta name="keywords" content="java,leetcode,hashmap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【力扣算法】1.两数之和">
+<meta property="og:url" content="http://yoursite.com/2019/04/04/【力扣算法】1-两数之和/index.html">
 <meta property="og:site_name" content="ZeromaXHe的博客">
-<meta property="og:description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
+<meta property="og:description" content="题目给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例:1234给定 nums = \[2, 7, 11, 15], target = 9因为 nums\[0] + nums\[1] = 2 + 7 = 9所以返回 \[0, 1] 题解1.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-04T07:17:29.752Z">
+<meta property="og:updated_time" content="2019-04-04T08:13:00.091Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Test">
-<meta name="twitter:description" content="Try to test what the so-called Pages mean. (Still don’t know where they are…)">
+<meta name="twitter:title" content="【力扣算法】1.两数之和">
+<meta name="twitter:description" content="题目给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例:1234给定 nums = \[2, 7, 11, 15], target = 9因为 nums\[0] + nums\[1] = 2 + 7 = 9所以返回 \[0, 1] 题解1.">
     
 
     
@@ -134,29 +136,75 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/Test/index.html">Test</em>
+    <a class="page-title-link" href="/categories/java/">java</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-【力扣算法】1-两数之和" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Test
+        【力扣算法】1.两数之和
         </h1>
     
 
             </header>
         
         
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/04/04/【力扣算法】1-两数之和/" class="article-date">
+            <time datetime="2019-04-04T07:35:00.000Z" itemprop="datePublished">2019-04-04</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hashmap/">hashmap</a>, <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/leetcode/">leetcode</a>
+    </div>
+
+            </div>
+        
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Try to test what the so-called Pages mean.</p>
-<p>(Still don’t know where they are…)</p>
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
+<p>示例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">给定 nums = \[2, 7, 11, 15], target = 9</span><br><span class="line"></span><br><span class="line">因为 nums\[0] + nums\[1] = 2 + 7 = 9</span><br><span class="line">所以返回 \[0, 1]</span><br></pre></td></tr></table></figure></p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="1-暴力法"><a href="#1-暴力法" class="headerlink" title="1. 暴力法"></a>1. 暴力法</h2><p>暴力法很简单。遍历每个元素 x，并查找是否存在一个值与 target - x相等的目标元素。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>复杂度分析：</p>
+<p>时间复杂度：O(n^2)，对于每个元素，我们试图通过遍历数组的其余部分来寻找它所对应的目标元素，这将耗费 O(n)的时间。因此时间复杂度为 O(n^2)。</p>
+<p>空间复杂度：O(1)。 </p>
+<h2 id="2-两遍哈希表"><a href="#2-两遍哈希表" class="headerlink" title="2. 两遍哈希表"></a>2. 两遍哈希表</h2><p>为了对运行时间复杂度进行优化，我们需要一种更有效的方法来检查数组中是否存在目标元素。如果存在，我们需要找出它的索引。保持数组中的每个元素与其索引相互对应的最好方法是什么？哈希表。</p>
+<p>通过以空间换取速度的方式，我们可以将查找时间从 O(n) 降低到 O(1)。哈希表正是为此目的而构建的，它支持以 近似 恒定的时间进行快速查找。我用“近似”来描述，是因为一旦出现冲突，查找用时可能会退化到 O(n)。但只要你仔细地挑选哈希函数，在哈希表中进行查找的用时应当被摊销为 O(1)。</p>
+<p>一个简单的实现使用了两次迭代。在第一次迭代中，我们将每个元素的值和它的索引添加到表中。然后，在第二次迭代中，我们将检查每个元素所对应的目标元素（target - nums[i]）是否存在于表中。注意，该目标元素不能是 nums[i] 本身！<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        map.put(nums[i], i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> complement = target - nums[i];</span><br><span class="line">        <span class="keyword">if</span> (map.containsKey(complement) &amp;&amp; map.get(complement) != i) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, map.get(complement) &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>复杂度分析：</p>
+<p>时间复杂度：O(n)， 我们把包含有 n 个元素的列表遍历两次。由于哈希表将查找时间缩短到 O(1) ，所以时间复杂度为 O(n)。</p>
+<p>空间复杂度：O(n)， 所需的额外空间取决于哈希表中存储的元素数量，该表中存储了 n 个元素。 </p>
+<h2 id="3-一遍哈希表"><a href="#3-一遍哈希表" class="headerlink" title="3. 一遍哈希表"></a>3. 一遍哈希表</h2><p>事实证明，我们可以一次完成。在进行迭代并将元素插入到表中的同时，我们还会回过头来检查表中是否已经存在当前元素所对应的目标元素。如果它存在，那我们已经找到了对应解，并立即将其返回。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> complement = target - nums[i];</span><br><span class="line">        <span class="keyword">if</span> (map.containsKey(complement)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; map.get(complement), i &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">        map.put(nums[i], i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>复杂度分析：</p>
+<p>时间复杂度：O(n)， 我们只遍历了包含有 n 个元素的列表一次。在表中进行的每次查找只花费 O(1) 的时间。</p>
+<p>空间复杂度：O(n)， 所需的额外空间取决于哈希表中存储的元素数量，该表最多需要存储 n 个元素。</p>
+<h1 id="做完的感悟"><a href="#做完的感悟" class="headerlink" title="做完的感悟"></a>做完的感悟</h1><p><strong>（1）</strong></p>
+<p>对于暴力法的优化，首先想到的是建立一个数组，数组上限为target/2（奇数就是再加一），然后将0~target/2直接存，target/2以上的反向存，当发现数组里有数时就检验是否相等，不相等的话就可以输出了。</p>
+<p>后来看了题解才发现，自己这样做其实就等同于自己在实现一个使用范围受限的hash map……直接套用java自带的HashMap就好了，时间复杂度还是O(1)……更不要说java实现的HashMap对冲突较多的节点用红黑树去优化还有自动扩容等特点了。</p>
+<p>数据结构学了还是想不到要用，是真的伤……还是得多看多练啊</p>
+<p><strong>（2）</strong></p>
+<p>在HashMap中通过<code>get()</code>来获取value，通过<code>put()</code>来插入value，<code>ContainsKey()</code>则用来检验对象是否已经存在。</p>
+<p>至于HashMap 在java8中的详细介绍，可以参考这篇文章<a href="https://blog.csdn.net/login_sonata/article/details/76598675" target="_blank" rel="noopener">《Java8的HashMap详解（存储结构，功能实现，扩容优化，线程安全，遍历方法）》</a></p>
+<p>摘些和本题目相关的部分吧：</p>
+<p>JDK1.8引入红黑树大程度优化了HashMap的性能，这主要体现在hash算法不均匀时，即产生的链表非常长，这时把链表转为红黑树可以将复杂度从O(n)降到O(logn)；</p>
+<p>Node[] table的初始化长度length(<strong>默认值是16</strong>)，<br>Load factor为负载因子(默认值是0.75)，<br>threshold是HashMap所能容纳的最大数据量的Node(键值对)个数。<br>threshold = length * Load factor。也就是说，在数组定义好长度之后，负载因子越大，所能容纳的键值对个数越多。</p>
+<p><strong>（3）</strong></p>
+<p>把Integer拼写成Inte<strong>r</strong>ger的错误我都不想说了……【捂脸】</p>
 
         </div>
         <footer class="article-footer">
@@ -164,7 +212,7 @@
 
 
 
-    <a data-url="http://yoursite.com/Test/index.html" data-id="cju2bowvv0000iorcm20tz70f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2019/04/04/【力扣算法】1-两数之和/" data-id="cju2brpx60007iorcr1qqq61j" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -234,18 +282,19 @@
             "@type": "Person",
             "name": "ZeromaXHe"
         },
-        "headline": "Test",
+        "headline": "【力扣算法】1.两数之和",
         "image": "http://yoursite.com",
-        
-        
+        "keywords": "java leetcode hashmap",
+        "genre": "java",
         "datePublished": "2019-04-04",
         "dateCreated": "2019-04-04",
         "dateModified": "2019-04-04",
-        "url": "http://yoursite.com/Test/index.html",
-        "description": "Try to test what the so-called Pages mean.
-(Still don’t know where they are…)
-"
-        "wordCount": 13
+        "url": "http://yoursite.com/2019/04/04/【力扣算法】1-两数之和/",
+        "description": "题目给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
+你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
+示例:1234给定 nums = \[2, 7, 11, 15], target = 9因为 nums\[0] + nums\[1] = 2 + 7 = 9所以返回 \[0, 1]
+题解1."
+        "wordCount": 578
     }
 </script>
 
@@ -321,6 +370,29 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/04/04/【力扣算法】2-两数相加/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            【力扣算法】2.两数相加
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2019/04/04/【Java】数组的创建方法/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">【Java】数组的创建方法</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -529,7 +601,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://yoursite.com/Test/index.html';
+    var disqus_url = 'http://yoursite.com/2019/04/04/【力扣算法】1-两数之和/';
     
     (function() {
     var dsq = document.createElement('script');
